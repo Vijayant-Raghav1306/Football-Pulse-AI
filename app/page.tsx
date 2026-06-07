@@ -1,6 +1,6 @@
 import { fetchSummary, fetchNews } from "@/lib/api";
 import AISummaryBanner from "@/components/AISummaryBanner";
-import CountdownBanner from "@/components/CountdownBanner";
+import ClientBanners from "@/components/ClientBanners";
 import NewsCard from "@/components/NewsCard";
 import Link from "next/link";
 
@@ -24,8 +24,8 @@ export default async function HomePage() {
         </p>
       </div>
 
-      {/* Countdown */}
-      <CountdownBanner />
+      {/* Countdown + Fun Fact — client only to avoid hydration mismatch */}
+      <ClientBanners />
 
       {/* AI Summary */}
       {summaryData?.content && (

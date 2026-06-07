@@ -9,10 +9,12 @@ export default function Navbar() {
         </Link>
         <div className="flex gap-6 text-sm">
           <Link href="/news" className="text-gray-300 hover:text-green-400 transition-colors">News</Link>
+          <Link href="/fixtures" className="text-gray-300 hover:text-green-400 transition-colors">Fixtures</Link>
+          <Link href="/squads" className="text-gray-300 hover:text-green-400 transition-colors">Squads</Link>
+          <Link href="/history" className="text-gray-300 hover:text-green-400 transition-colors">History</Link>
+          <Link href="/legends" className="text-gray-300 hover:text-green-400 transition-colors">Legends</Link>
           <Link href="/injuries" className="text-gray-300 hover:text-green-400 transition-colors">Injuries</Link>
           <Link href="/transfers" className="text-gray-300 hover:text-green-400 transition-colors">Transfers</Link>
-          <Link href="/teams" className="text-gray-300 hover:text-green-400 transition-colors">Teams</Link>
-          <Link href="/fixtures" className="text-gray-300 hover:text-green-400 transition-colors">Fixtures</Link>
           {/* Chat hidden until v2 — keeping code, shipping post-launch */}
         </div>
       </div>
